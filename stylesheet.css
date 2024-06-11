@@ -1,0 +1,234 @@
+body {
+  background-color: rgba(0, 0, 0, 0.752);
+}
+.header-container {
+  background-color: #47c9af;
+  border-radius: 5px;
+  margin: auto;
+  padding: 0;
+  color: white;
+  font-family: "Roboto Slab", arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-toggle {
+  border: 1px solid transparent;
+  border-top: 4px;
+  cursor: pointer;
+  background-color: transparent;
+  float: right;
+}
+
+.icon-bar {
+  background-color: rgba(255, 255, 255, 0.776);
+  height: 3px;
+  display: block;
+  width: 22px;
+  border-radius: 1px;
+  margin: 3px;
+}
+.icon-bar:hover {
+  background-color: white;
+}
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdown-button {
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content {
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  padding: 0;
+}
+
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown.show .dropdown-content {
+  max-height: 500px; /* adjust as needed */
+  opacity: 1;
+  padding: 12px 0;
+}
+.dropdown-container::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #f9f9f9 transparent transparent transparent;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.dropdown.show::after {
+  opacity: 1;
+}
+.shifted {
+  transform: translateY(60px); /* adjust as needed */
+  transition: transform 0.5s ease;
+}
+.form-container {
+  display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  background-color: white;
+  color: #444444;
+  padding: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+.form-container img {
+  width: 70px;
+}
+.form-inner-container {
+  display: flex;
+}
+.form-img-container {
+  width: 20%;
+}
+.form-text-container {
+  width: 80%;
+  text-align: center;
+
+  /* background-color: blue; */
+}
+.input-container {
+  display: flex;
+  margin-top: 30px;
+}
+input {
+  width: 100%;
+  padding: 3px;
+  border: none;
+  border-bottom: solid;
+  border-width: 1;
+  border-color: #444444;
+}
+.checkbox-container {
+  display: flex;
+  margin-top: 10px;
+}
+.checkbox-input {
+  width: 5%;
+  align-self: flex-start;
+}
+.checkbox-label {
+  font-size: 12px;
+  color: #444444;
+}
+form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.submit-button {
+  background-color: #47c9af;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  position: relative;
+  height: 36px;
+  margin: 0;
+  margin-top: 15px;
+  min-width: 64px;
+  padding: 0 16px;
+  display: inline-block;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  overflow: hidden;
+  will-change: box-shadow;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1),
+    background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.second-container {
+  font-size: 12px;
+}
+footer {
+  background: #253340;
+  padding: 5px;
+}
+.title {
+  color: white;
+}
+.list-unstyled {
+  list-style: none;
+  color: #6d8dab;
+}
+.triangle {
+  color: #6d8dab;
+}
+.triangle::before {
+  content: "\f0da";
+}
+.footer-dropdown {
+  color: white;
+}
+.social-media-container {
+  color: white;
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.social-media-container a {
+  color: white;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.intro {
+  font-size: 12px;
+  color: white;
+  opacity: 0.5;
+}
+.social-media-container a:hover {
+  cursor: pointer;
+  color: rgb(11, 94, 167);
+}
+/* Mobile View */
+@media screen and (max-width: 600px) {
+  .header-container {
+    width: auto;
+    padding: 10px;
+    font-weight: 600;
+  }
+}

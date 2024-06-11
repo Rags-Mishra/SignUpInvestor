@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/99f87b1bfe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="header-container">
+          Lending Buddha
+          <button
+            class="navbar-toggle"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <div id="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                </div> -->
+        </div>
+      </header>
+      <div class="form-container">
+        <div class="form-inner-container">
+          <div class="form-img-container">
+            <img src="/public/images/text-editor.png" />
+          </div>
+          <div class="form-text-container">
+            <h3>Become an Lendor</h3>
+          </div>
+        </div>
+        <form>
+          <div class="input-container">
+            <input
+              class="input"
+              type="text"
+              id="amount_to_borrow"
+              name="amount"
+              placeholder="Amount to Lend (Rs.25,000 - 10,00,000)"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              class="input"
+              type="text"
+              id="expected-interest"
+              name="expected-interest"
+              placeholder="Expected Interest Rate (In %)"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              class="input"
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Title"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              class="input"
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              class="input"
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Last Name"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              class="input"
+              type="password"
+              id="create-password"
+              name="create-password"
+              placeholder="Create a password"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              class="input"
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+            />
+          </div>
+          <div class="input-container">
+            <input
+              class="input"
+              type="number"
+              id="mobile-number"
+              name="mobile-number"
+              placeholder="Mobile Number"
+            />
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" class="checkbox-input" />
+            <span class="checkbox-label"
+              >I have read and agree to the
+              <strong
+                ><a
+                  target="_blank"
+                  href="privacy-policy.html"
+                  style="color: #47c9af"
+                >
+                  Privacy Policy
+                </a></strong
+              >,
+              <strong
+                ><a
+                  target="_blank"
+                  href="terms-of-use.html"
+                  style="color: #47c9af"
+                >
+                  Terms of Use
+                </a></strong
+              >and Consent to Electronic Disclosures
+            </span>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" class="checkbox-input" />
+            <span class="checkbox-label"
+              >I authorize Lending Buddha to do background checks on my profile
+              in accordance with Anti Money Laundering Laws, if required
+            </span>
+          </div>
+          <button class="submit-button">Continue</button>
+        </form>
+        <div class="second-container">
+          <p>
+            <i
+              >Having trouble signing up?
+              <a
+                class="contactUsSideSlider"
+                style="cursor: pointer; color: #47c9af"
+                >Contact us</a
+              >
+            </i>
+          </p>
+        </div>
+        <div style="font-size: 12px">
+          <p>
+            Over 20,000 Lendors have trusted Lending Buddha with their hard
+            earned money and are now enjoying safe and high monthly returns.
+            Lending Buddha has introduced India's retail Lendors to brand new
+            and highly lucrative asset class, India's People.
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="dropdown-container">
+          <div class="dropdown" id="dropdown1">
+            <i class="fa fa-caret-right" style="color: white"></i>
+            <a class="dropdown-button">About Lending Buddha</a>
+            <div class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="#">How it works 2</a>
+              <a href="#">About us</a>
+              <a href="#">Team</a>
+              <a href="#">Advisory</a>
+              <a href="#">Blog</a>
+              <a href="#">Calculate EMI</a>
+            </div>
+          </div>
+          <div class="dropdown" id="dropdown2">
+            <i class="fa fa-caret-right" style="color: white"></i>
+
+            <a class="dropdown-button">Lendors</a>
+            <div class="dropdown-content">
+              <a href="#">Why Lend</a>
+              <a href="#">Lendors Eligibility</a>
+              <a href="#">Returns & Fees</a>
+              <a href="#">Lendors code of conduct</a>
+              <a href="#">Lendors FAQ</a>
+              <a href="#">Tutorial for Lendors</a>
+            </div>
+          </div>
+          <div class="dropdown" id="dropdown3">
+            <i class="fa fa-caret-right" style="color: white"></i>
+
+            <a class="dropdown-button">Borrowers</a>
+            <div class="dropdown-content">
+              <a href="#">Why Borrow</a>
+              <a href="#">Borrowers Eligibility</a>
+              <a href="#">How to create effective listing</a>
+              <a href="#">Purpose of Loan</a>
+              <a href="#">Repayment, Interest Rates</a>
+              <a href="#">Borrower FAQ</a>
+              <a href="#">Tutorial for Borrowers</a>
+            </div>
+          </div>
+          <div class="dropdown" id="dropdown4">
+            <i class="fa fa-caret-right" style="color: white"></i>
+
+            <a class="dropdown-button">Legal</a>
+            <div class="dropdown-content">
+              <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Refund and Cancellation policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="social-media-container">
+          <a href="https://www.youtube.com/channel/UCSQ8T9yCJ7HfPR7a1EXVrFw">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/lending.buddha.finance">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com/lendingbuddha">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/101734812">
+            <i class="fa fa-google-plus"></i>
+          </a>
+        </div>
+        <p class="intro">
+          Stay up to date with the latest news and offers from Lending Buddha
+        </p>
+        <div class="form-group signup-form navbar-form">
+          <input
+            type="email"
+            id="semail"
+            class="form-control"
+            name="email"
+            placeholder="Enter your email address"
+            required="required"
+            aria-required="true"
+          /><br />
+          <button
+            type="submit"
+            id="ssubmit"
+            class="btn btn-cta-primary sub-btn"
+            style="background: #4a6781; border-color: #4a6781; width: 100%"
+          >
+            Subscribe Now
+          </button>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
